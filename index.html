@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +8,20 @@
     <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
     <!-- Nav Section Start -->
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"> <img src="./assets/images/favicon/android-chrome-512x512.png" alt="icon"> </div>
+            <div class="background parallax"> <img src="./assets/images/favicon/android-chrome-512x512.png" alt="icon"> </div>
             <ul class="menu">
-                <li><a href="" class="menu-btn">Início</a></li>
-                <li><a href="" class="menu-btn">Produtos</a></li>
-                <li><a href="" class="menu-btn">Calculadora</a></li>
-                <li><a href="" class="menu-btn">Frete</a></li>
-                <li><a href="" class="menu-btn">Contato</a></li>
+                <li><a href="#home" class="menu-btn">Início</a></li>
+                <li><a href="#products" class="menu-btn">Produtos</a></li>
+                <li><a href="#" class="menu-btn">Calculadora</a></li>
+                <li><a href="#" class="menu-btn">Frete</a></li>
+                <li><a href="#" class="menu-btn">Contato</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fa fa-bars"></i>
@@ -33,5 +35,49 @@
             </div>
         </div>
     </section>
+    <!-- Products Section Start -->
+    <section class="products" id="products">
+        <div class="max-width">
+            <h2 class="title">Nossas Delícias</h2>
+                <div class="productscontent">
+                    <div class="card">
+                        <div class="box">
+                            <img src="./assets/images/Coxinha.png" alt="Coxinha">
+                            <div class="text">Coxinhas</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit corporis libero laborum incidunt accusamus!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="./assets/images/Kibe.png" alt="Coxinha">
+                            <div class="text">Kibe</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit corporis libero laborum incidunt accusamus!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="./assets/images/Pastel.png" alt="Coxinha">
+                            <div class="text">Pastel</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit corporis libero laborum incidunt accusamus!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="./assets/images/Salgados.png" alt="Coxinha">
+                            <div class="text">Salgados</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit corporis libero laborum incidunt accusamus!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="./assets/images/Coxinha.png" alt="Coxinha">
+                            <div class="text">Coxinhas</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit impedit corporis libero laborum incidunt accusamus!</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>
