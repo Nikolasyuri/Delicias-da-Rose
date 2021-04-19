@@ -25,7 +25,7 @@ html{
 }
 .navbar.sticky {
     padding: 5px 0;
-    background: #333;
+    background: #f5fcc6;
 }
 .navbar .max-width{
     display: flex;
@@ -56,7 +56,7 @@ html{
     color: #fff;
 }
 .navbar.sticky .menu li a{
-    color: #fff;
+    color: #65540E;
 }
 .navbar.sticky .menu li a:hover{
     color: crimson;
@@ -76,11 +76,12 @@ section{
 }
 .products .productscontent{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
-.title{
+section .title{
+    color: #292F36;
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -89,10 +90,31 @@ section{
     margin-bottom: 60px;
     padding-bottom: 20px;
 }
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 205px;
+    height: 3px;
+    background: #292F36;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    font-size: 20px;
+    color: #FF6B6B;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
 /* Home Styling Start */
 .home{
         display: flex;
         background: url(./assets/images/Design2.jpg) no-repeat center;
+        background-size: cover;
         background-attachment: fixed;
         height: 100vh;
         color: #fff;
@@ -103,4 +125,106 @@ section{
     margin: auto 0 auto 0;
 }
 /* Products Styling Start */
+.products .title::after{
+    content: "Conheça";
+}
+.products .carousel .card{
+    text-align: center;
+    background: cornsilk;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.products .carousel .card .box{
+    background: #fff8dc;
+    align-items: center;
+    margin: 10px;
+    padding: 30px 20px;
+    
+}
+.products .carousel .card .box img{
+    margin: auto;
+    height: 220px;
+    width: 220px;
+}
+.products .carousel .card .box .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #FF6B6B!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #FF6B6B!important;}
 
+    /* Responsive Media Query */
+    @media (max-width: 1300px){
+
+    }
+    @media (max-width: 1104px){
+
+    }
+    @media (max-width: 991px){
+
+    }
+    @media (max-width: 947px){
+        .menu-btn{
+            color: #111;
+            display: block;
+            z-index: 999;
+        }
+        .menu-btn i.active:before{
+            content: "\f00d";
+        }
+        .navbar .menu{
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            left: -100%;
+            top: 0;
+            background: #FFF8DC;
+            text-align: center;
+            padding-top: 80px;
+            transition: all 0.3s ease;
+        }
+        .navbar .menu.active{
+            left: 0;
+        }
+        .navbar .menu li{
+            display: block;
+        }
+        .navbar .menu li a{
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 25px;
+        }
+    }
+    @media (max-width: 847px){
+        
+    }
+    @media (max-width: 690px){
+        
+    }
+    @media (max-width: 597){
+        
+    }
+    @media (max-width: 500px){
+
+    }
+    @media (max-width: 397px){
+    }
