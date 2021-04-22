@@ -74,12 +74,6 @@ html{
 section{
     padding: 100px 0;
 }
-.products .productscontent{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
 section .title{
     color: #292F36;
     position: relative;
@@ -112,19 +106,22 @@ section .title::after{
 }
 /* Home Styling Start */
 .home{
-        display: flex;
         background: url(./assets/images/Design2.jpg) no-repeat center;
         background-size: cover;
         background-attachment: fixed;
         height: 100vh;
-        color: #fff;
         min-height: 500px;
-        font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width {
     margin: auto 0 auto 0;
 }
 /* Products Styling Start */
+.products .productscontent{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
 .products .title::after{
     content: "Conheça";
 }
@@ -172,6 +169,66 @@ section .title::after{
 .owl-dot:hover{
     background: #FF6B6B!important;}
 
+    /* Combos Styling Start */
+.combo{
+    background: #404A55;
+}
+.combo .title{
+    color: #FFF8DC;
+}
+.combo .title::before{
+    background: #FFF8DC;
+}
+.combo .combocontents{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.combo .combocontents .card{
+    width: calc(33% - 20px);    
+}
+.combo .combocontents .card .box{
+    text-align: center;
+    background: #FFF8DC;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.2);
+}
+.combo .combocontents .card .box img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.combo .combocontents .card .box .text{
+    font-size: 27px;
+    font-family: 'Ubuntu' sans-serif;
+    font-weight: 500;
+    color: #F91B10;
+}
+.combo .combocontents .card .box ul{
+    font-size: 18px;
+    padding: 10px;
+}
+.combo .combocontents .card .box li{
+    list-style-type: none;
+}
+.combo .combocontents .card .box .price{
+    font-size: 22px;
+    font-weight: 500;
+}
+.combo .combocontents a{
+    margin: auto;
+    margin-top: 7px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #F91B10;
+    padding: 20px;
+    background: cornsilk;
+    border-radius: 6px;
+}
     /* Responsive Media Query */
     @media (max-width: 1300px){
 
@@ -185,6 +242,12 @@ section .title::after{
         }
         section .title::after{
             font-size: 18px;
+        }
+        .combo .combocontents .card{
+            width: calc(50% - 20px);    
+        }
+        .combo .combocontents a{
+            font-size: 23px;
         }
     }
     @media (max-width: 947px){
@@ -226,7 +289,9 @@ section .title::after{
         
     }
     @media (max-width: 690px){
-        
+        .combo .combocontents .card{
+            width: 100%;    
+        }
     }
     @media (max-width: 597){
         
@@ -237,6 +302,12 @@ section .title::after{
         }
         section .title::after{
             font-size: 16px;
+        }
+        .combo .combocontents .card .box .text{
+                font-size: 25px;
+        }
+        .combo .combocontents a{
+            font-size: 20px;
         }
     }
     @media (max-width: 397px){
@@ -252,5 +323,22 @@ section .title::after{
         }
         .products .carousel .card .box p{
             font-size: 14px;
+        }
+        .combo .combocontents .card .box img{
+            height: 150px;
+            width: 150px;
+        }
+        .combo .combocontents .card .box .text{
+            font-size: 20px;
+        }
+        .combo .combocontents .card .box ul{
+            font-size: 16px;
+        }
+        .combo .combocontents .card .box .price{
+            font-size: 18px;
+        }
+        .combo .combocontents a{
+            font-size: 18px;
+            text-align: center;
         }
     }
