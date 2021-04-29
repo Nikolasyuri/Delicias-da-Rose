@@ -179,6 +179,10 @@ section .title::after{
 .combo .title::before{
     background: #FFF8DC;
 }
+.combo .title::after{
+    content: "Ideal para sua fome";
+    background: #404A55;
+}
 .combo .combocontents{
     display: flex;
     flex-wrap: wrap;
@@ -238,6 +242,10 @@ section .title::after{
 .calculator .title{
     color: #111;
 }
+.calculator .title::after{
+    content: "Feito para você";
+    background: #f5fcc6;
+}
 .calculator .calculatorcontent{
     display: flex;
     flex-wrap: wrap;
@@ -248,9 +256,6 @@ section .title::after{
 }
 .calculator .calculatorcontent .side{
     width: calc(50% - 10px);
-}
-.calculator .calculatorcontent .left{
-
 }
 .calculator .calculatorcontent .left p{
     margin-top: 10px;
@@ -266,15 +271,61 @@ section .title::after{
     background: #FA3C32;
     cursor: pointer;
 }
-.calculator .calculatorcontent .right{
-
-}
 .calculator .calculatorcontent .right img{
-    width: 600px;
-    height: 337px;
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
     box-shadow: 0px 16px 20px grey;
 }
+.contact{
+    height: 100vh;
+}
+.contact .title::after{
+    content: "Entre em contato" ;
+}
+.contact .contactcontent .text{
+    text-align: justify;
+    font-size: 18px;
+}
+.contact .contactcontent .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.contact .contactcontent .column{
+    width: calc(25% - 10px);
+}
+.contact .contactcontent i{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #fff;
+    padding: 15px;
+    background: crimson;
+    border-radius: 30px;
+}
+.contact .contactcontent .info{
+    margin-bottom: 30px;
+}
+.contact .contactcontent .info .head{
+    font-size: 18px;
+    font-weight: 500;
+}
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
     /* Responsive Media Query */
     @media (max-width: 1300px){
 
@@ -332,15 +383,31 @@ section .title::after{
         }
     }
     @media (max-width: 847px){
-        
+        .contact .contactcontent .icons{
+            flex-wrap: wrap;
+        }
+        .contact .contactcontent .column{
+            width: calc(50% - 10px);
+        }
     }
     @media (max-width: 690px){
         .combo .combocontents .card{
             width: 100%;    
         }
+        .calculator .calculatorcontent{
+            display: inline-block;
+        }
+        .calculator .calculatorcontent .side{
+            width: 100%;
+        }
+        .calculator .calculatorcontent .right img{
+            margin-top: 40px;
+        }
     }
-    @media (max-width: 597){
-        
+    @media (max-width: 597px){
+        .contact .contactcontent .column{
+            width: 100%
+        }
     }
     @media (max-width: 500px){
         section .title{
