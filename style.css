@@ -130,13 +130,19 @@ section .title::after{
     background: cornsilk;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
+
 .products .carousel .card .box{
     background: #fff8dc;
     align-items: center;
     margin: 10px;
     padding: 30px 20px;
-    
+    transition: all 0.3s ease;
+}
+.products .carousel .card .box:hover{
+    transform: scale(1.05);
+    background: #FF6B6B;
 }
 .products .carousel .card .box img{
     margin: auto;
@@ -200,6 +206,10 @@ section .title::after{
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.combo .combocontents .card .box:hover{
+    transform: scale(1.05);
 }
 .combo .combocontents .card .box img{
     height: 200px;
@@ -232,6 +242,12 @@ section .title::after{
     padding: 20px;
     background: cornsilk;
     border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.combo .combocontents a:hover{
+    transform: scale(1.05);
+    background: #F91B10;
+    color: cornsilk;
 }
 
 /* Calculator Section Start */
@@ -261,22 +277,49 @@ section .title::after{
     margin-top: 10px;
 }
 .calculator .calculatorcontent .left #button{
-    border: groove;
+    border: none;
+    box-shadow: 0px 10px 10px grey;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 8px;
     background: #FA3C32;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
+.calculator .calculatorcontent .left #button:hover{
+    transform: scale(1.05);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+.calculator .calculatorcontent .left input[type=number]{
+    width: 45px;
+    height: 42px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid rgb(90, 90, 90);
+    border-radius: 6px;
+  }
 .calculator .calculatorcontent .right img{
     width: 100%;
     height: 100%;
     border-radius: 6px;
     box-shadow: 0px 16px 20px grey;
 }
+
+/* Contact Styling Start */
+
 .contact{
     height: 100vh;
 }
