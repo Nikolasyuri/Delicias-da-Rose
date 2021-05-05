@@ -273,33 +273,24 @@ section .title::after{
 .calculator .calculatorcontent .side{
     width: calc(50% - 10px);
 }
-.calculator .calculatorcontent .left p{
-    margin-top: 10px;
+.calculator .calculatorcontent .left .text{
+    font-size: 20px;
+    text-align: justify;
 }
-.calculator .calculatorcontent .left #button{
-    border: none;
-    box-shadow: 0px 10px 10px grey;
+.calculator .calculatorcontent .left p,
+.calculator .calculatorcontent .left .text-2{
+    text-align: justify;
+    font-size: 18px;
     margin-top: 10px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    background: #FA3C32;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.calculator .calculatorcontent .left #button:hover{
-    transform: scale(1.05);
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 input[type=number]
 {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 .calculator .calculatorcontent .left input[type=number]{
     width: 45px;
@@ -308,10 +299,30 @@ input[type=number]
     margin: 0;
     text-align: center;
     font-size: 16px;
-    border: 2px solid rgb(90, 90, 90);
+    border: 2px solid #dd362e;
     border-radius: 6px;
-  }
+}
+.calculator .calculatorcontent .left .calcular{
+    text-align: center;
+    margin-top: 14px;
+}
+.calculator .calculatorcontent .left .calcular #button{
+    border: none;
+    box-shadow: 0px 10px 10px grey;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    background: #FA3C32;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.calculator .calculatorcontent .left .calcular #button:hover{
+    transform: scale(1.05);
+}
 .calculator .calculatorcontent .right img{
+    margin-left: 14px;
     width: 100%;
     height: 100%;
     border-radius: 6px;
@@ -389,6 +400,13 @@ footer span a:hover{
         .combo .combocontents a{
             font-size: 23px;
         }
+        .calculator .calculatorcontent .left .text{
+            font-size: 18px;
+        }
+        .calculator .calculatorcontent .left p,
+        .calculator .calculatorcontent .left .text-2{
+            font-size: 16px;
+        }
     }
     @media (max-width: 947px){
         .menu-btn{
@@ -424,6 +442,9 @@ footer span a:hover{
         .products .carousel .card .box .text{
             font-size: 23px;
         }
+        .calculator .calculatorcontent .left #button{
+            font-size: 17px;
+        }
     }
     @media (max-width: 847px){
         .contact .contactcontent .icons{
@@ -442,6 +463,16 @@ footer span a:hover{
         }
         .calculator .calculatorcontent .side{
             width: 100%;
+        }
+        .calculator .calculatorcontent .left p{
+            font-size: 16px;
+        }
+        .calculator .calculatorcontent .left .text-2{
+            font-size: 18px;
+            text-align: center;
+        }
+        .calculator .calculatorcontent .left .calcular #button{
+            font-size: 18px;
         }
         .calculator .calculatorcontent .right img{
             margin-top: 40px;
@@ -465,13 +496,34 @@ footer span a:hover{
         .combo .combocontents a{
             font-size: 20px;
         }
+        
+    }
+    @media (max-width: 470px){
+        section .title::after{
+            font-size: 14px;
+            bottom: -10px;
+            padding: 3px;
+        }
+        .combo .combocontents a{
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+    @media (max-width: 420px){
+        .combo .combocontents a{
+            font-size: 18px;
+            padding: 10px;
+        }
+        .contact .contactcontent .text{
+            font-size: 16px;
+        }
     }
     @media (max-width: 397px){
         section .title{
             font-size: 28px;
         }
         section .title::after{
-            font-size: 16px;
+            font-size: 12px;
         }
         .products .carousel .card .box img{
             height: 150px;
@@ -496,5 +548,11 @@ footer span a:hover{
         .combo .combocontents a{
             font-size: 18px;
             text-align: center;
+        }
+        .calculator .calculatorcontent .left .text-2{
+            font-size: 16px;
+        }
+        .calculator .calculatorcontent .left .calcular #button{
+            font-size: 16px;
         }
     }
