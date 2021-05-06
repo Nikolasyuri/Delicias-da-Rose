@@ -328,6 +328,40 @@ input[type=number]
     border-radius: 6px;
     box-shadow: 0px 16px 20px grey;
 }
+.calculator .calculatorcontent .right #res{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.calculator .calculatorcontent .right #res-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px grey;
+}
+.calculator .calculatorcontent .right #res-2 img{
+    margin-top: 10px;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 20px grey;
+}
+.calculator .calculatorcontent .right #res-2 li{
+    list-style-type: none;
+    
+}
+.calculator .calculatorcontent .right #res-2 li p{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
 
 /* Contact Styling Start */
 
@@ -473,10 +507,15 @@ footer span a:hover{
         }
         .calculator .calculatorcontent .left .calcular #button{
             font-size: 18px;
+            margin-top: 10px;
         }
         .calculator .calculatorcontent .right img{
             margin-top: 40px;
         }
+        .calculator .calculatorcontent .right #res{
+            margin-top: 30px;
+        }
+        
     }
     @media (max-width: 597px){
         .contact .contactcontent .column{
@@ -495,6 +534,12 @@ footer span a:hover{
         }
         .combo .combocontents a{
             font-size: 20px;
+        }
+        .calculator .calculatorcontent .right #res{
+            font-size: 18px;
+        }
+        .calculator .calculatorcontent .right #res-2 li p{
+            font-size: 18px;
         }
         
     }

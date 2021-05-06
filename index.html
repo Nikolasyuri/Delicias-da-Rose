@@ -196,12 +196,14 @@
             <div class="left side">
                 <h3 class="text">Vamos te ajudar a calcular a quantidade de delícias ideal para você!</h3>
                 <p>É bem simples! O cálculo é feito baseado na quantidade de pessoas. Ao inserir a quantidade de pessoas, te daremos uma estimativa de quantos salgadinhos, docinhos, e qual o tamanho do bolo.</p>
-                <div class="text-2">Meu evento tem <input type="number" name="txtcon" id="txtcon"> convidados.</div>
+                <div class="text-2">Meu evento tem <input type="number" name="txtcon" id="txtcon" min="1"> convidados.</div>
                 <div class="calcular"><input type="button" value="Calcular" onclick="calcular()" id="button"></div>
             </div>
             <div class="right side">
                 <div id="res">
-                    <img src="./assets/images/salgados-xicara2.jpg" alt="Salgados+Chicara">
+                    <img id="salgados" src="./assets/images/salgados-xicara2.jpg" alt="Salgados+Chicara">
+                </div>
+                <div id="res-2" style="display: none;">
                 </div>
             </div>
             </div>
